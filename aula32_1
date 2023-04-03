@@ -1,0 +1,16 @@
+'''
+Faça um programa que peça ao usuário para digitar um número inteiro,
+informe se este número é par ou impar. Caso o usuário não digite
+um número inteiro, informe que não é um número inteiro.
+'''
+entrada = input('Digite um número: ')
+
+if entrada.isdigit():
+    entrada_rec = int(entrada)
+    par_ou_impar = entrada_rec % 2 == 0
+    texto = 'impar'
+
+    if par_ou_impar:
+        texto = 'par'
+
+    print(f'O numero é {entrada_rec} e é {texto}')
