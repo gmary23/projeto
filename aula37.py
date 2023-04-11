@@ -9,7 +9,7 @@ while contador <= 100: # diz que vai até 100, mas só +1 e mostra até 101
 
     if contador >= 10 and contador <= 27: #diz que entre o 10 e 27 não mostrar
         #print('Não vou mostrar o 6.')
-        continue
+        continue 
      
     print(contador)
     
