@@ -32,13 +32,13 @@ while True:
 # a partir desse ponto que inicia a calculadora em si
     print('Realizando sua conta confira o resultado abaixo.')
     if operador =='+':
-        print(num_1 + num_2) 
+        print(f'{num_1} + {num_2} =', num_1 + num_2) 
     if operador =='-':
-        print(num_1 - num_2) 
+        print(f'{num_1} - {num_2} =', num_1 - num_2) 
     if operador =='/':
-        print(num_1 + num_2) 
+        print(f'{num_1} / {num_2} =', num_1 / num_2) 
     if operador =='*':
-        print(num_1 + num_2) 
+        print(f'{num_1} * {num_2}=', num_1 * num_2) 
   # aqui fala que se quiser sair basta digitar s  
     sair = input('Quer sair?[s]im: ').lower().startswith('s')
 
