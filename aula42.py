@@ -1,4 +1,4 @@
-nome = 'Geila Poderosa'
+nome = 'Geila'
 indice = 0
 novo_nome =''
 
