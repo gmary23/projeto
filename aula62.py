@@ -20,7 +20,7 @@ contrário disso:
     resultado é o valor da conta
 O primeiro dígito do CPF é 7
 """
-cpf_enviado_usuario = '74682489070'
+cpf_enviado_usuario = "74682489070"
 nove_digitos = cpf_enviado_usuario[:9]  # os 9 primeiros dígitos
 contador_regressivo_1 = 10
 
@@ -39,15 +39,15 @@ dez_digitos = nove_digitos + str(digito_1)
 contador_regressivo_2 = 11
 
 resultado_digito_2 = 0
-for digito in dez_digitos:
+for digito in dez_dgitos:
     resultado_digito_2 += int(digito) * contador_regressivo_2
     contador_regressivo_2 -= 1
 digito_2 = (resultado_digito_2 * 10) % 11
 digito_2 = digito_2 if digito_2 <= 9 else 0
 
-cpf_gerado_pelo_calculo = f'{nove_digitos}{digito_1}{digito_2}'
+cpf_gerado_pelo_calculo = f"{nove_digitos}{digito_1}{digito_2}"
 
 if cpf_enviado_usuario == cpf_gerado_pelo_calculo:
-    print(f' {cpf_enviado_usuario} é valido')
+    print(f" {cpf_enviado_usuario} é valido")
 else:
-    print('CPF inválido')
+    print("CPF inválido")
