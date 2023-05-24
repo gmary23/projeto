@@ -5,8 +5,15 @@ p1 = {
     "sobrenome": "Martins",
 }
 
-ultima_chave = (
-    p1.popitem()
-)  # popitem aqui - assim como o pop, ele também busca, mas remove a última chave
-print(ultima_chave)
-print(p1)  # mas qdo chamamos a lista ele apagou
+p1.update(
+    {
+        "nome": "João",
+        "idade": "32",  # criou uma idade que não existia
+    }
+)  # atualizou o nome na lista
+print(p1)
+
+###############
+# Outra forma de usar update é usar valores nomeados, como no exemplo abaixo.
+p1.update(nome="Vitor", idade="11")
+print(p1)
