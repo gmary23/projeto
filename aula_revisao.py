@@ -4,7 +4,7 @@ maior_frequencia = 0 # guarda a frequência que se repete
 i = 0
 while i < len(palavra):
     letra = palavra[i]
-    print(letra, i)
+    #print(letra, i)
     frequencia = palavra.count(letra) # conta quantas vezes ela aparece na palavra e armazena na variável frequên
     if frequencia > maior_frequencia: #
         mais_repetida = letra
