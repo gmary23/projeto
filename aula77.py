@@ -1,11 +1,11 @@
 perguntas = [
     {
-        "Pergunta": "Quanto é 2*2",
+        "Pergunta": "Quanto é 2*2?",
         "Opções": ["1", "3", "4", "5"],
         "Resposta": "4",
     },
     {
-        "Pergunta": "Quanto é 5*5",
+        "Pergunta": "Quanto é 5*5?",
         "Opções": ["25", "55", "10", "51"],
         "Resposta": "25",
     },
@@ -15,7 +15,11 @@ perguntas = [
         "Resposta": "5",
     },
 ]
-for arroz in perguntas:
-    print("Pergunta", arroz["Pergunta"])
+for perg in perguntas:
+    print('Pergunta'perg["Pergunta"])
     print()  # gera espaço
-    print("Opções", arroz["Opções"])
+
+    for i, opcao in enumerate(perg["Opções"]):  # busca os índices e valores
+        print(f"{i})", opcao)
+
+    print()

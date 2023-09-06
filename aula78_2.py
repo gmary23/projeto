@@ -1,5 +1,5 @@
 # Exemplos de uso de sets
-
+# Exemplo de uso de sets
 letras = set()
 while True:
     letra = input("Digite: ")
